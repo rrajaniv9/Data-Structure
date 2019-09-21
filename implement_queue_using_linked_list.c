@@ -40,7 +40,7 @@ void main()
     }
 }
 
-void insert()
+void insert() //<===>insert_rear
 {
     int item;
     struct node*p,*temp;
@@ -64,7 +64,7 @@ void insert()
       temp->link=p;
     }
 }
-void delet()
+void delet()//<====>delet_front
 {
     struct node *temp;
     if(first==NULL)
@@ -86,7 +86,7 @@ void delet()
       free(temp);
     }
 }
-void display()
+void display()///display using single linked list body
 {
     struct node *temp;
     if(first==NULL)
